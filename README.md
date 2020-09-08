@@ -17,7 +17,7 @@ watch $command $wait-time-in-seconds [-Cumulative]
 Examples: 
 
 ```powershell
-watch "cat test.txt" 1
+$ watch "cat test.txt" 1
 
 Watching: 'cat test.txt' every 1 second(s).
 Press Ctrl+C to break.
@@ -26,7 +26,7 @@ test
 ```
 
 ```powershell
-watch "cat test.txt" 1 -Cumulative
+$ watch "cat test.txt" 1 -Cumulative
 
 Watching (Cumulative): 'cat test.txt' every 1 seconds(s).
 Press Ctrl+C to break.
