@@ -1,4 +1,6 @@
 function watch($Command, $Wait, [switch]$Cumulative){
+    $global:Error.Clear()
+
     try{
         if($Command -eq $null){
             Write-Host "Error: Please enter a command using the -Command flag." -BackgroundColor Red -ForegroundColor White
@@ -31,7 +33,6 @@ function watch($Command, $Wait, [switch]$Cumulative){
         }
     }catch{
         Write-Host "Unspecified error caught. Please see the following for more details:"
-        Write-Host $Error -BackgroundColor Red -ForegroundColor White
-        $Error.Clear()
+        Write-Host $global:Error -BackgroundColor Red -ForegroundColor White
     }
 }
