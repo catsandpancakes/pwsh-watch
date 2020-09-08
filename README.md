@@ -38,7 +38,7 @@ test
 test
 ```
 
-If the `$Cumulative` switch is specified, the output will be accumulated. 
+If the `-Cumulative` switch is specified, the output will be accumulated. 
 
 ## Contact
 
