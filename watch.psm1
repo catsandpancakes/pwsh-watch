@@ -1,3 +1,11 @@
+#############################################
+# Author: ricepancakes                      #
+# GitHub: github.com/catsandpancakes        #
+# Contact: ricepancakes@protonmail.com      #
+#                                           #
+# Licensed under the MIT license.           #
+#############################################
+
 function watch($Command, $Wait, [switch]$Cumulative){
     $global:Error.Clear()
 
