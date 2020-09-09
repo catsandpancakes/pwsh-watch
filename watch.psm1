@@ -31,7 +31,7 @@ function watch($Command, $Wait, [switch]$Cumulative){
             }
             else{
                 Clear-Host
-                Write-Host "Watching (Cumulative): '$Command' every $Wait seconds(s)."
+                Write-Host "Watching (Cumulative): '$Command' every $Wait second(s)."
                 Write-Host "Press Ctrl+C to break.`n"
                 while(1){
                     Invoke-Expression "$Command"
